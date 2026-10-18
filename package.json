@@ -8,9 +8,9 @@
     "pnpm": ">=12.0.0"
   },
   "scripts": {
-    "dev": "echo 'No runnable workspace packages exist yet.'",
-    "build": "echo 'No buildable workspace packages exist yet.'",
-    "typecheck": "tsc --showConfig --project tsconfig.base.json --pretty false",
+    "dev": "pnpm --filter @payflow/api dev",
+    "build": "pnpm --filter @payflow/api build",
+    "typecheck": "pnpm --filter @payflow/api typecheck && tsc --showConfig --project tsconfig.base.json --pretty false",
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
