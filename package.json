@@ -1,0 +1,28 @@
+{
+  "name": "payflow",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@12.14.0",
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": ">=12.0.0"
+  },
+  "scripts": {
+    "dev": "echo 'No runnable workspace packages exist yet.'",
+    "build": "echo 'No buildable workspace packages exist yet.'",
+    "typecheck": "tsc --showConfig --project tsconfig.base.json --pretty false",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "pnpm format:check && pnpm typecheck && pnpm lint && pnpm test",
+    "test": "echo 'No testable workspace packages exist yet.'"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "eslint": "10.13.0",
+    "eslint-config-prettier": "10.1.8",
+    "prettier": "3.9.10",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.71.2"
+  }
+}

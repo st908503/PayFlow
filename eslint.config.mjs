@@ -1,0 +1,17 @@
+import js from '@eslint/js';
+import eslintConfigPrettier from 'eslint-config-prettier';
+import tseslint from 'typescript-eslint';
+
+export default tseslint.config(
+  {
+    ignores: ['**/node_modules/**', '**/dist/**', '**/coverage/**'],
+  },
+  js.configs.recommended,
+  tseslint.configs.recommended,
+  eslintConfigPrettier,
+  {
+    rules: {
+      '@typescript-eslint/no-explicit-any': 'error',
+    },
+  },
+);
